@@ -1,7 +1,7 @@
 <p align="center" >
     <a href="https://github.com/xlxwalex/HyCxG/data">
     <br>
-    <img src="../figure/logo.png" width="275"/>
+    <img src="https://github.com/xlxwalex/HyCxG/blob/main/figures/sub-logo.png" width="275"/>
     <br>
     </a>
 </p>
