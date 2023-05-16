@@ -15,12 +15,12 @@
 
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/Counterfactual) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/Counterfactual/README_ZH.md)
 
-## Counterfactual Detection Dataset
+## Counterfactual Recognition Dataset
 
 The Counterfactual Recognition (CR) dataset is derived from Subtask 1 - Recognizing Counterfactual Statements (RCS) of SemEval2020 Task5. The data is collected from the domains of politics, finance, and health, and consists of 13k training data with 7k test data.
 
 ### Download and process the data
-Before using the data processing and downloading script, please make sure that the dependencies in [`requirements.txt`](https://github.com/xlxwalex/HyCxG/blob/main/requirements.txt) have already been installed. After installing the dependencies, use the following command to download and process the data (note: you may not attach any parameters, all parameters have default values):
+Before using the data processing and downloading script, please make sure that the dependencies in [`requirements.txt`](https://github.com/xlxwalex/HyCxG/blob/main/requirements.txt) have already been installed. After installing the dependencies, use the following command to download and process the data (Note: you may not attach any parameters, all parameters have default values):
 ```shell
 bash download_and_process_counterfactual.sh [--DATA_DIR] [--OUTPUT_DIR] [--STANFORD_DIR]
 ```
