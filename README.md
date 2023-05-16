@@ -1,7 +1,7 @@
 <p align="center" >
     <a href="https://github.com/xlxwalex/HyCxG">
     <br>
-    <img src="https://github.com/xlxwalex/HyCxG/blob/main/figures/main-logo.png" width="85%"/>
+    <img src="https://github.com/xlxwalex/HyCxG/blob/main/figures/main-logo.png" width="100%"/>
     <br>
     </a>
 </p>
