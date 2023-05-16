@@ -13,7 +13,7 @@
 
 ---
 
-[**English**](https://github.com/xlxwalex/HyCxG/tree/main/data) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/README_ZH.md)
+[**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/Counterfactual) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/Counterfactual/README_ZH.md)
 
 ## Counterfactual Detection Dataset
 
