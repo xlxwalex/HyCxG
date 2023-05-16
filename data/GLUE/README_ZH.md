@@ -15,8 +15,7 @@
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/GLUE) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/GLUE/README_ZH.md)
 ## GLUE基准数据集
 
-The General Language Understanding Evaluation (GLUE) benchmark is a common collection of natural language understanding systems based on a set of nine understanding tasks constructed from various existing natural language understanding datasets. These tasks are carefully selected to include a diverse range of dataset sizes, types, and difficulty levels. We evaluated the performance of this benchmark dataset on eight tasks, including `CoLA` (linguistic acceptability), `SST-2` (sentiment analysis), `MRPC`/`STS-B`/`QQP` (semantic similarity computation and equivalence matching), `MNLI`/`QNLI`/`RTE` (natural language inference).
-
+通用自然语言理解评估(General Language Understanding Evaluation, GLUE)基准数据集是一个常用的自然语言理解系统的集合，基于已有的各方面自然语言理解数据集构建的九项句子语义理解任务的基准测试，这些任务被精选出来包括多样化的数据集大小、文本类型和难度程度。我们针对它的8个任务进行了性能评估，分别是`CoLA`(语言可接受度)、`SST-2`(文本情感分析)、`MRPC`/`STS-B`/`QQP`(语义相似度计算以及等价性匹配)、`MNLI`/`QNLI`/`RTE`(自然语言推理)。
 ### 数据下载及处理
 在使用数据处理及下载脚本前，请您确认已经安装了[`requirements.txt`](https://github.com/xlxwalex/HyCxG/blob/main/requirements.txt)中的依赖包。在安装完依赖包后，用以下命令来获得并处理数据(可以不附加任何参数，所有参数均有默认值)：
 ```shell

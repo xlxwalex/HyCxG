@@ -1,5 +1,5 @@
 <p align="center" >
-    <a href="https://github.com/xlxwalex/HyCxG/">
+    <a href="https://github.com/xlxwalex/HyCxG/data">
     <br>
     <img src="https://github.com/xlxwalex/HyCxG/blob/main/figures/sub-logo.png" width="275"/>
     <br>
