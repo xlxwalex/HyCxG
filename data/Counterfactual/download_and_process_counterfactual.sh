@@ -7,7 +7,6 @@ STANFORD_DIR=$3
 if test -z "$DATA_DIR"
 then
   DATA_DIR='.'
-  echo "Empty"
 fi
 
 if test -z "$OUTPUT_DIR"
