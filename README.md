@@ -6,7 +6,6 @@
     </a>
 </p>
 
----
 
 # Enhancing Language Representation with Constructional Information for Natural Language Understanding
 [**English**](https://github.com/xlxwalex/HyCxG/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/README_ZH.md)
