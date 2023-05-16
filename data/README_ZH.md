@@ -12,8 +12,9 @@
 </p>
 
 ---
-## HyCxG使用的数据集
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/data) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/README_ZH.md)
+
+## HyCxG使用的数据集
 
 在本工作中，我们用到了以下五个方面的数据集(括号中为在论文中提到的位置)：
  + **方面级情感分析数据集** `[Rest 14/Lap 14/Rest 15/Rest 16/MAMS]` (4.2节的Results on ABSA tasks)
