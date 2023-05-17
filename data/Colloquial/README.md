@@ -17,12 +17,12 @@
 
 ## Colloquial Dataset for ABSA
 
-The colloquial ABSA datasets are composed of two sources in sentiment analysis: the Twitter dataset and the GermEval2017 dataset. Both datasets are derived from social media, so they contain more colloquial language compared to other datasets. Since GermEval is much larger than Twitter, we sampled a subset of GermEval for performance testing.
+The colloquial ABSA datasets are composed of two sources in sentiment analysis: the Twitter dataset and the GermEval2017 dataset. Therefore, it can serve as data for performance evaluation across different register. Both datasets are derived from social media, so they contain more colloquial language compared to other datasets. Since GermEval is much larger than Twitter, we sampled a subset of GermEval for performance testing.
 
 ### Download and process the data
 Before using the data processing and downloading script, please make sure that the dependencies in [`requirements.txt`](https://github.com/xlxwalex/HyCxG/blob/main/requirements.txt) have already been installed. After installing the dependencies, use the following command to download and process the data (note: you may not attach any parameters, all parameters have default values):
 ```shell
-bash download_and_process_colloquial.sh.sh [--DATA_DIR] [--OUTPUT_DIR] [--STANFORD_DIR]
+bash download_and_process_colloquial.sh [--DATA_DIR] [--OUTPUT_DIR] [--STANFORD_DIR]
 ```
 **Parameters:**
 + DATA_DIR: The folder where the downloaded raw data is located. The default parameter is the current folder.

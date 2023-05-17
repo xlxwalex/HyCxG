@@ -15,7 +15,7 @@
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/Colloquial) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/Colloquial/README_ZH.md)
 ## 口语化情感数据集
 
-口语化情感数据集由Twitter数据集以及GermEval2017两部分方面级情感分析数据集组成，这两个数据集的数据均来自于社交媒体平台，因此相较于其他数据集包含更多的口语化语料。由于GermEval远大于Twitter，我们对GermEval采样为了一个子集进行性能测试。
+口语化情感数据集由Twitter数据集以及GermEval2017两部分方面级情感分析数据集组成，这两个数据集的数据均来自于社交媒体平台，因此相较于其他数据集包含更多的口语化语料，因此可以作为不同语域(Register)性能评测的数据。由于GermEval远大于Twitter，我们对GermEval采样为了一个子集进行性能测试。
 
 ### 数据下载及处理
 在使用数据处理及下载脚本前，请您确认已经安装了[`requirements.txt`](https://github.com/xlxwalex/HyCxG/blob/main/requirements.txt)中的依赖包。在安装完依赖包后，用以下命令来获得并处理数据(可以不附加任何参数，所有参数均有默认值)：
