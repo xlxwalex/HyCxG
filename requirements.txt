@@ -12,3 +12,5 @@ spacy==2.3.5
 allennlp==2.1.0
 datasets==2.3.2
 stanfordcorenlp==3.9.1.1
+stanfordnlp==0.2.0
+stanza==1.4.2
