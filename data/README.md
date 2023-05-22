@@ -52,7 +52,7 @@ bash data_pipeline.sh [--DATA_DIR] [--OUTPUT_DIR] [--STANFORD_DIR]
 
 **Note:** If you have the Stanford Parser in your system, please set `STANFORD_DIR` to the directory where the parser is located. If the parser folder does not exist, the program will automatically download it (353MB) from the mirror source. You can also use [`download_stanfordcore.py`](https://github.com/xlxwalex/HyCxG/tree/main/data/download_stanfordcore.py) for manual download.
 
-## Mirror data source
+## Mirror Data Source
 As both the datasets and parser mentioned above are publicly available and can be downloaded directly, we provide a backup mirror source for the convenience of users to download them uniformly (except for the GLUE benchmark). If you are the copyright owner of the datasets or parser and believe that distributing them through this source may violate your data license, please contact [`xlxw@zju.edu.cn`](mailto:xlxw@zju.edu.cn) and we will immediately remove your dataset or parser.
 
 ## Data Usage Regulations
