@@ -12,7 +12,7 @@
 </p>
 
 ---
-[**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/Multilingual) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/Multilingual/README_ZH.md)
+[**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/ABSA) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/ABSA/README_ZH.md)
 ## 方面级情感分析数据集
 
 方面级情感分析(Aspect-based sentiment analysis, ABSA)数据集基于SemEval 2014/2015/2016以及MAMS任务及数据。其中SemEval 2014中包含了餐厅(Restaurant)和笔记本电脑(laptop)两个领域的评论，而SemEval 2014/2015均为餐厅领域的评论。MAMS是一个更大尺度的数据集，其每个句子都有多个方面，因此更具挑战性。

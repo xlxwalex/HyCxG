@@ -15,7 +15,7 @@
 
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/data/ABSA) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/ABSA/README_ZH.md)
 
-## Multilingual Dataset for ABSA
+## Aspect-based Sentiment Analysis Dataset for ABSA
 
 The Aspect-based Sentiment Analysis (ABSA) dataset is based on SemEval 2014, 2015, 2016, and MAMS. SemEval 2014 contains reviews from two domains: restaurants and laptops. SemEval 2014 and 2015 include reviews from the restaurant domain only. MAMS is a larger-scale dataset, where each sentence has multiple aspects, making it more challenging.
 
