@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 from __future__ import division
 import sys
-sys.path.append('..')
 import json
 import os
 import numpy as np
@@ -9,7 +8,12 @@ import pandas as pd
 import argparse
 from tqdm import tqdm
 from stanfordcorenlp import StanfordCoreNLP
-from download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
+try:
+    sys.path.append('.')
+    from download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
+except:
+    sys.path.append('..')
+    from download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
 
 MAP_POLARITY = {0 : 'neutral', 1 : 'positive', -1 : 'negative'}
 

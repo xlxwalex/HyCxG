@@ -3,6 +3,7 @@
 DATA_DIR=$1
 OUTPUT_DIR=$2
 STANFORD_DIR=$3
+EXECUTE_DIR=$4
 
 if test -z "$DATA_DIR"
 then
@@ -19,6 +20,11 @@ then
   STANFORD_DIR='../stanford-corenlp-3.9.2-minimal'
 fi
 
+if test -z "$EXECUTE_DIR"
+then
+  EXECUTE_DIR='.'
+fi
+
 echo "Download counterfactual data in mirror source of ZJU  MMF"
 echo "Origin data can be found in https://github.com/Jiaqi1008/SemEval2020_Task5"
 
@@ -28,6 +34,6 @@ wget -O $TRAIN_FILE https://expic.xlxw.org/hycxg/datamirror/subtask1_train.csv
 wget -O $TEST_FILE https://expic.xlxw.org/hycxg/datamirror/subtask1_test.csv
 
 echo "Process csv data to HyCxG format"
-python process_counterfactual.py --train_file $TRAIN_FILE --test_file $TEST_FILE \
+python $EXECUTE_DIR/process_counterfactual.py --train_file $TRAIN_FILE --test_file $TEST_FILE \
 --out_path $OUTPUT_DIR \
 --stanford_path $STANFORD_DIR

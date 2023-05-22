@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 from __future__ import division
 import sys
-sys.path.append('..')
 import json
 import os
 import numpy as np
@@ -11,8 +10,12 @@ from tqdm import tqdm
 from stanfordcorenlp import StanfordCoreNLP
 try: from datasets import load_dataset
 except: raise Exception('GLUE benchmark needs datasets package of Hugging Face, please use pip to install the package first.')
-try: from download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
-except: from ..download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
+try:
+    sys.path.append('.')
+    from download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
+except:
+    sys.path.append('..')
+    from download_stanfordcore import download_stanfordcore, unzip_stanfordcore, STANFORD_CORE_LINK
 
 LABEL_MAPPING = {
     'qnli': {0: 'entailment', 1: 'not entailment', -1 : 'none'},
@@ -104,7 +107,7 @@ def process_data(args):
         if task in ['cola', 'sst2']: train_json = process_single_data(train_data, args.nlpmodel, task)
         else: train_json = process_pair_data(train_data, args.nlpmodel, task)
         output_json(train_json, os.path.join(args.out_path, FOLDER_MAPPING[task]), 'train.json')
-        if task not in ['MNLI']:
+        if task not in ['mnli']:
             dev_data = read_json_data(task, 'validation')
             if task in ['cola', 'sst2']: dev_json = process_single_data(dev_data, args.nlpmodel, task, 'validation')
             else: dev_json = process_pair_data(dev_data, args.nlpmodel, task, 'validation')

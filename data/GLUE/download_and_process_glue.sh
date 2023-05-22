@@ -3,6 +3,7 @@
 OUTPUT_DIR=$1
 STANFORD_DIR=$2
 TASK=$3
+EXECUTE_DIR=$4
 
 if test -z "$OUTPUT_DIR"
 then
@@ -19,9 +20,14 @@ then
   TASK='all'
 fi
 
+if test -z "$EXECUTE_DIR"
+then
+  EXECUTE_DIR='.'
+fi
+
 echo "Original data can be found in https://gluebenchmark.com/"
 
 echo "Process data to HyCxG format (depend on Hugging Face)"
-python download_and_process_glue.py --task $TASK \
+python $EXECUTE_DIR/download_and_process_glue.py --task $TASK \
 --out_path $OUTPUT_DIR \
 --stanford_path $STANFORD_DIR

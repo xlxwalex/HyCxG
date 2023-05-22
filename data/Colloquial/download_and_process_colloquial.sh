@@ -3,6 +3,7 @@
 DATA_DIR=$1
 OUTPUT_DIR=$2
 STANFORD_DIR=$3
+EXECUTE_DIR=$4
 
 if test -z "$DATA_DIR"
 then
@@ -19,6 +20,11 @@ then
   STANFORD_DIR='../stanford-corenlp-3.9.2-minimal'
 fi
 
+if test -z "$EXECUTE_DIR"
+then
+  EXECUTE_DIR='.'
+fi
+
 echo "Download colloquial data (Twitter) in mirror source of ZJU MMF"
 echo "Origin data for Twitter can be found in https://github.com/songyouwei/ABSA-PyTorch/tree/master/datasets/acl-14-short-data"
 
@@ -30,7 +36,7 @@ wget -O $TWITTER_TRAIN_FILE https://expic.xlxw.org/hycxg/datamirror/Twitter_trai
 wget -O $TWITTER_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/Twitter_test.raw
 
 echo "Process raw data of Twitter to HyCxG format"
-python process_twitter.py --train_file $TWITTER_TRAIN_FILE --test_file $TWITTER_TEST_FILE \
+python $EXECUTE_DIR/process_twitter.py --train_file $TWITTER_TRAIN_FILE --test_file $TWITTER_TEST_FILE \
 --out_path $TWITTER_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -48,5 +54,5 @@ wget -O $GERMEVAL_VALID_FILE https://expic.xlxw.org/hycxg/datamirror/germeval_va
 wget -O $GERMEVAL_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/germeval_test.raw
 
 echo "Process raw data of GermEval to HyCxG format"
-python process_germeval.py --train_file $GERMEVAL_TRAIN_FILE --valid_file $GERMEVAL_VALID_FILE --test_file $GERMEVAL_TEST_FILE \
+python $EXECUTE_DIR/process_germeval.py --train_file $GERMEVAL_TRAIN_FILE --valid_file $GERMEVAL_VALID_FILE --test_file $GERMEVAL_TEST_FILE \
 --out_path $GERMEVAL_OUT_DIR

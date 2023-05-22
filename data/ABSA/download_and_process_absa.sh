@@ -3,6 +3,7 @@
 DATA_DIR=$1
 OUTPUT_DIR=$2
 STANFORD_DIR=$3
+EXECUTE_DIR=$4
 
 if test -z "$DATA_DIR"
 then
@@ -19,6 +20,11 @@ then
   STANFORD_DIR='../stanford-corenlp-3.9.2-minimal'
 fi
 
+if test -z "$EXECUTE_DIR"
+then
+  EXECUTE_DIR='.'
+fi
+
 echo "Download ABSA data in mirror source of ZJU MMF"
 echo "Origin data for ABSA data (Not official) for Rest14/Lap14/Rest15/Rest16 can be found in https://github.com/GeneZC/ASGCN/tree/master/datasets"
 echo "Origin data for ABSA data (official) for MAMS can be found in https://github.com/siat-nlp/MAMS-for-ABSA"
@@ -33,7 +39,7 @@ wget -O $Rest14_TRAIN_FILE https://expic.xlxw.org/hycxg/datamirror/rest14_train.
 wget -O $Rest14_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/rest14_test.raw
 
 echo "Process raw data (train + test) of Rest 14 to HyCxG format"
-python process_absa.py --train_file $Rest14_TRAIN_FILE --valid_file $Rest14_VALID_FILE --test_file $Rest14_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Rest14_TRAIN_FILE --valid_file $Rest14_VALID_FILE --test_file $Rest14_TEST_FILE \
 --out_path $Rest14_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -46,7 +52,7 @@ wget -O $Rest14_TRAIN_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/rest14_
 wget -O $Rest14_VALID_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/rest14_valid_split.raw
 
 echo "Process raw data (train + valid + test) of Rest 14 to HyCxG format"
-python process_absa.py --train_file $Rest14_TRAIN_SPLIT_FILE --valid_file $Rest14_VALID_SPLIT_FILE --test_file $Rest14_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Rest14_TRAIN_SPLIT_FILE --valid_file $Rest14_VALID_SPLIT_FILE --test_file $Rest14_TEST_FILE \
 --out_path $Rest14_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -60,7 +66,7 @@ wget -O $Lap14_TRAIN_FILE https://expic.xlxw.org/hycxg/datamirror/laptop_train.r
 wget -O $Lap14_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/laptop_test.raw
 
 echo "Process raw data (train + test) of Lap 14 to HyCxG format"
-python process_absa.py --train_file $Lap14_TRAIN_FILE --valid_file $Lap14_VALID_FILE --test_file $Lap14_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Lap14_TRAIN_FILE --valid_file $Lap14_VALID_FILE --test_file $Lap14_TEST_FILE \
 --out_path $Lap14_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -73,7 +79,7 @@ wget -O $Lap14_TRAIN_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/lap14_tr
 wget -O $Lap14_VALID_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/lap14_valid_split.raw
 
 echo "Process raw data (train + valid + test) of Lap 14 to HyCxG format"
-python process_absa.py --train_file $Lap14_TRAIN_SPLIT_FILE --valid_file $Lap14_VALID_SPLIT_FILE --test_file $Lap14_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Lap14_TRAIN_SPLIT_FILE --valid_file $Lap14_VALID_SPLIT_FILE --test_file $Lap14_TEST_FILE \
 --out_path $Lap14_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -87,7 +93,7 @@ wget -O $Rest15_TRAIN_FILE https://expic.xlxw.org/hycxg/datamirror/rest15_train.
 wget -O $Rest15_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/rest15_test.raw
 
 echo "Process raw data (train + test) of Rest 15 to HyCxG format"
-python process_absa.py --train_file $Rest15_TRAIN_FILE --valid_file $Rest15_VALID_FILE --test_file $Rest15_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Rest15_TRAIN_FILE --valid_file $Rest15_VALID_FILE --test_file $Rest15_TEST_FILE \
 --out_path $Rest15_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -100,7 +106,7 @@ wget -O $Rest15_TRAIN_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/rest15_
 wget -O $Rest15_VALID_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/rest15_valid_split.raw
 
 echo "Process raw data (train + valid + test) of Rest 15 to HyCxG format"
-python process_absa.py --train_file $Rest15_TRAIN_SPLIT_FILE --valid_file $Rest15_VALID_SPLIT_FILE --test_file $Rest15_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Rest15_TRAIN_SPLIT_FILE --valid_file $Rest15_VALID_SPLIT_FILE --test_file $Rest15_TEST_FILE \
 --out_path $Rest15_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -114,7 +120,7 @@ wget -O $Rest16_TRAIN_FILE https://expic.xlxw.org/hycxg/datamirror/rest16_train.
 wget -O $Rest16_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/rest16_test.raw
 
 echo "Process raw data (train + test) of Rest 16 to HyCxG format"
-python process_absa.py --train_file $Rest16_TRAIN_FILE --valid_file $Rest16_VALID_FILE --test_file $Rest16_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Rest16_TRAIN_FILE --valid_file $Rest16_VALID_FILE --test_file $Rest16_TEST_FILE \
 --out_path $Rest16_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -127,7 +133,7 @@ wget -O $Rest16_TRAIN_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/rest16_
 wget -O $Rest16_VALID_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/rest16_valid_split.raw
 
 echo "Process raw data (train + valid + test) of Rest 16 to HyCxG format"
-python process_absa.py --train_file $Rest16_TRAIN_SPLIT_FILE --valid_file $Rest16_VALID_SPLIT_FILE --test_file $Rest16_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $Rest16_TRAIN_SPLIT_FILE --valid_file $Rest16_VALID_SPLIT_FILE --test_file $Rest16_TEST_FILE \
 --out_path $Rest16_OUT_DIR \
 --stanford_path $STANFORD_DIR
 
@@ -142,6 +148,6 @@ wget -O $MAMS_VALID_SPLIT_FILE https://expic.xlxw.org/hycxg/datamirror/Mams_Vali
 wget -O $MAMS_TEST_FILE https://expic.xlxw.org/hycxg/datamirror/Mams_Test_Gold.xml.seg
 
 echo "Process raw data (train + valid + test) of Rest 16 to HyCxG format"
-python process_absa.py --train_file $MAMS_TRAIN_SPLIT_FILE --valid_file $MAMS_VALID_SPLIT_FILE --test_file $MAMS_TEST_FILE \
+python $EXECUTE_DIR/process_absa.py --train_file $MAMS_TRAIN_SPLIT_FILE --valid_file $MAMS_VALID_SPLIT_FILE --test_file $MAMS_TEST_FILE \
 --out_path $MAMS_OUT_DIR \
 --stanford_path $STANFORD_DIR
