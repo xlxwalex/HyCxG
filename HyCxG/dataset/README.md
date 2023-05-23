@@ -17,10 +17,10 @@
 
 ## Construction grammar list
 
-In this repository, we provide mirror data and download script for six language (English, French, German, Spanish, Dutch, and Turkish) pattern syntax lists based on the `c2xg` package.
+In this repository, we provide mirror data and download script for six language (English, French, German, Spanish, Dutch, and Turkish) construction grammar lists based on the `c2xg` package.
 
 ### Download data
-You can use the following command to download and process the data (Note: you may not attach any parameters, all parameters have default values):
+You can use the following command to download the data (Note: you may not attach any parameters, all parameters have default values):
 ```shell
 bash download_vocab.sh [--LANGUAGES]
 ```
