@@ -17,7 +17,7 @@
 
 ## Construction dictionaries for CxGTokenizer
 
-In this repository, we provide mirror data and download script for six language (English, French, German, Spanish, Dutch, and Turkish) dictionaries for CxGTokenizer based on the `c2xg` package. Regarding the specific usage guidance in CxGTokenizer, please refer to [`tutorials`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials).
+In this repository, we provide mirror data and download script for six language (English, French, German, Spanish, Dutch, and Turkish) dictionaries in CxGTokenizer based on the `c2xg` package. Regarding the specific usage guidance for CxGTokenizer, please refer to [`tutorials`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials).
 
 ### Download data
 You can use the following command to download the data (Note: you may not attach any parameters, all parameters have default values):
