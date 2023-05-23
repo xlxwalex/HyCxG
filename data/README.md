@@ -16,7 +16,7 @@
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/data) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/data/README_ZH.md)
 
 ## Data of HyCxG
-In this work, we used the following five datasets (mentioned in parentheses in the paper):
+In this work, we used the following five datasets (locations mentioned in the paper are in parentheses):
  + **Aspect-based sentiment analysis datasets** `[Rest 14/Lap 14/Rest 15/Rest 16/MAMS]` (Section 4.2 - Results on ABSA tasks)
  + **GLUE benchmark** `[CoLA/SST-2/MNLI/QNLI/RTE/QQP/MRPC/STS]` (Section 4.2 - Results on GLUE tasks)
  + **Multilingual sentiment analysis datasets** `[French/Spanish/Turkish/Dutch]` (Section 4.3 - Multilingual results)
