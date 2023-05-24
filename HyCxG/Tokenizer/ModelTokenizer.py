@@ -2,7 +2,9 @@ from Tokenizer.BaseTokenizer import BasicTokenizer, WordpieceTokenizer, Tokenize
 from Tokenizer.constants import *
 from Tokenizer.CxGProcessor.CxGCore import CxGCore
 from Tokenizer.Vocab import CxGVocab
+from transformers import AutoTokenizer
 
+# Not available in this repo
 class BertTokenizer(Tokenizer):
     def __init__(self, args):
         super().__init__(args, token_mode=CONST_TOKEN_MODE_WORD)
@@ -27,7 +29,7 @@ class BertTokenizer(Tokenizer):
 class CxGTokenizer(object):
     def __init__(self, args, visible=True, workers=None, lang='eng'):
         self.cxg = CxGCore(args, workers=workers, lang=lang)
-        self.bert = BertTokenizer(args)
+        self.bert = AutoTokenizer.from_pretrained(args.lm_path)
         self.cons_vocab = CxGVocab(args.cxg_vocab_path, lang=lang)
         self.visible = visible
 
