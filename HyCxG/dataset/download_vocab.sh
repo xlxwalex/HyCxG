@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DETECT_FLAG=dataset
+DETECT_FLAG=dataset/Vocab
 # (English, Turkish, Dutch, Spanish, French, German)
 LANGUAGE_1=$1
 LANGUAGE_2=$2
@@ -12,7 +12,14 @@ LANGUAGE_6=$6
 if [ -d "$DETECT_FLAG" ]; then
     OUT_PATH=$DETECT_FLAG
 else
-    OUT_PATH='.'
+    OUT_PATH='Vocab'
+fi
+
+if [ -d "$OUT_PATH" ]; then
+    echo "$OUT_PATH folder exists, pass"
+else
+    echo "$OUT_PATH folder does not exist, try to mkdir"
+    mkdir "$OUT_PATH"
 fi
 
 VOCAB_DIR=$OUT_PATH/CxG
