@@ -39,6 +39,7 @@ In Section4.2 - Results on ABSA tasks and Appendix K - Detailed Results on ABSA 
 
 ### Resource of data
 Our mirror data is obtained from SemEval 2014, 2015, 2016 and MAMS, as well as the data sources [ASGCN-data](https://github.com/GeneZC/ASGCN/tree/master/datasets) and [MAMS](https://github.com/siat-nlp/MAMS-for-ABSA). If you have also used this dataset, you can cite their papers as follows:
+
 **SemEval 2014**
 ```
 @inproceedings{pontiki2014semeval,
