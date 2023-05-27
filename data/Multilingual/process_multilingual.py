@@ -67,7 +67,7 @@ def convert_raw2json(path : str, desc: str='train', lang: str='french', port:int
     with open(path, 'r', encoding='utf-8') as fp:
         raw_data = fp.readlines()
     fp.close()
-    if lang in ['french', 'dutch', 'spanish']:
+    if lang in ['french', 'spanish']:
         with CoreNLPClient(start_server=0, endpoint='http://localhost:{}'.format(port) , output_format="json") as nlpmodel:
             for idx in tqdm(range(0, len(raw_data), 3), desc='Process {} file for {}'.format(desc, lang)):
                 obj = {}
