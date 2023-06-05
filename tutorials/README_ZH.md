@@ -49,7 +49,7 @@ test_sentence = "The restaurants try too hard to make fancy food."
 constructions = cxg_tokenizer.tokenize(test_sentence, raw=True)
 print(constructions)
 ```
-返回的结果为一个字典，如下所示：：
+返回的结果为一个字典，如下所示：
 ```python
 constructions = {
 'text': 'The restaurants try too hard to make fancy food.',
@@ -121,8 +121,8 @@ CXG : the--NOUN--was, (1, 4)
 CXG : AUX--so--ADJ, (3, 6)
 ```
 **注意**：论文中的权重超参数已经硬编码在了[`Simuann/CxGCoverage.py`](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/Simuann/CxGCoverage.py)的头部字典中，如果需要测试修改，请直接修改文件中对应部分的值
-### Q&A
-**1Q**: 如果一个句子中有两个一样的构式，那么入股用字典存储键的话会产生冲突？
+#### Q&A
+**1Q**: 如果一个句子中有两个一样的构式，那么如果用字典存储键的话会产生冲突？
 
 **1A**: 我们会在第二个及之后相同构式末尾加上--[X]，X为相同构式的排序索引号
 
