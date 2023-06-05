@@ -13,7 +13,7 @@
 
 ---
 
-## Resource Lists
+## Resource List
 This is a page to briefly list the papers and resources related to Construction Grammar (CxG) and our HyCxG.
 
 ### Content
@@ -75,6 +75,6 @@ This is a page to briefly list the papers and resources related to Construction 
 5. (LREC) **CxLM: A Construction and Context-aware Language Model.** Yu-Hsiang Tseng et al. 2022. [[Access]](https://aclanthology.org/2022.lrec-1.683/) [[Code]](https://github.com/lopentu/CxLM)
 
 ### 5. Collections
-1. (NAACL HLT Workshop 2010) Extracting and Using Constructions in Computational Linguistics [[Link]](https://aclanthology.org/venues/ws/) [[Collection]](https://aclanthology.org/volumes/W10-08/)
-2. (AAAI Spring Symposium 2017) Computational Construction Grammar and Natural Language Understanding [[Link]](https://www.aiinternational.org/Press/Reports/Symposia/Spring/ss-17.php) [[Collection]](https://www.aiinternational.org/Library/Symposia/Spring/ss17-02.php) (Seems not available recently)
-3. (GURT/SyntaxFest 2023) CxGs+NLP (Construction Grammars and NLP Workshop) [[Link]](https://gurt.georgetown.edu/gurt-2023/) [[Collection]](https://aclanthology.org/volumes/2023.cxgsnlp-1/)
+1. (NAACL HLT Workshop 2010) **Extracting and Using Constructions in Computational Linguistics** [[Link]](https://aclanthology.org/venues/ws/) [[Collection]](https://aclanthology.org/volumes/W10-08/)
+2. (AAAI Spring Symposium 2017) **Computational Construction Grammar and Natural Language Understanding** [[Link]](https://www.aiinternational.org/Press/Reports/Symposia/Spring/ss-17.php) [[Collection]](https://www.aiinternational.org/Library/Symposia/Spring/ss17-02.php) (Seems not available recently)
+3. (GURT/SyntaxFest 2023) **CxGs+NLP (Construction Grammars and NLP Workshop)** [[Link]](https://gurt.georgetown.edu/gurt-2023/) [[Collection]](https://aclanthology.org/volumes/2023.cxgsnlp-1/)
