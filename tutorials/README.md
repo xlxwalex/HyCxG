@@ -11,7 +11,7 @@
     </a>
 </p>
 
-
+---
 ## Tutorials of HyCxG
 
 [**English**](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/README_ZH.md)
@@ -24,7 +24,7 @@
   - [2 The Usage of Cond-MC Solver](#2-the-usage-of-cond-mc-solver)
     - [Q\&A](#qa)
   - [3 The Generation of Hypergraph](#3-the-generation-of-hypergraph)
-
+- [Paper and Resource List](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/PaperLists.md)
 ---
 
 ### The Usage of CxGTokenizer
@@ -40,7 +40,7 @@ After all the preparations are ready, you can obtain the complete tutorial by ru
 ```python
 import os
 class ARG_Test:
-    cxg_vocab_path: str = os.path.abspath(os.path.join(os.path.dirname(__file__), "../dataset/Vocab/CxG")) # 请注意核对路径
+    cxg_vocab_path: str = os.path.abspath(os.path.join(os.path.dirname(__file__), "../dataset/Vocab/CxG")) # Please check the path
     lm_path: str = 'bert-base-uncased'
     do_lower_case: bool = True
     lm_group: str = 'BERT' # BERT or RoBERTa
@@ -91,7 +91,7 @@ The three constructions 'ADV--hard--to--VERB', 'ADV--hard--to', 'hard--PART--VER
 
 After obtaining all of the constructions, we need to select the  discriminative constructions for encoding. We formalized the selecting process as a multi-objective optimization problem, which is detailed in Section 2.2 of the paper. Since this is an NP problem, we utilzie Simulated Annealing (SA) as a heuristic approach to find the optimal set of constructions. This section will provide an introduction to the code used for solving the problem.
 
-And you can obtain the complete tutorial by running the script [`02_coverage_solver_tutorial.py`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/01_cxgtokenizer_tutorial.py), or use the simple code sample and output below:
+And you can obtain the complete tutorial by running the script [`02_coverage_solver_tutorial.py`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/02_coverage_solver_tutorial.py), or use the simple code sample and output below:
 
 1. Extract the constructions of the sample
 
@@ -242,4 +242,3 @@ print('hypergraph adjs =\n{}'.format(hg))
 #        [0., 0., 0., 0., 0., 0., 1., 1., 1., 0., 0., 0., 0., 0., 0.],
 #        [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]])]
 ```
-

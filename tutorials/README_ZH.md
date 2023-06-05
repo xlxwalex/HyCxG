@@ -16,9 +16,13 @@
 ## HyCxG教程
 
 ### 目录
-+ [CxGTokenizer的使用](#CxGTokenizer的使用)
-+ [Cond-MC求解器的使用](#Cond-MC求解器的使用)
-+ [Hypergraph的生成](#Hypergraph的生成)
+- [HyCxG教程](#hycxg教程)
+- [目录](#目录)
+  - [CxGTokenizer的使用](#CxGTokenizer的使用)
+  - [Cond-MC求解器的使用](#Cond-MC求解器的使用)
+    - [Q\&A](#qa)
+  - [Hypergraph的生成](#Hypergraph的生成)
+- [论文及资源表 (仅英文)](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/PaperLists.md)
 
 ---
 ### CxGTokenizer的使用
@@ -73,7 +77,7 @@ constructions = {
 ### Cond-MC求解器的使用
 在获得所有的构式后，我们对这些构式进行了筛选，选择了代表性的构式进行编码。我们将筛选过程形式化为了一个多目标的优化问题，可以在论文的Section 2.2中找到详细过程。由于这是一个NP问题，我们采用了模拟退火(Simulated Annealing, SA)来启发式地找到最优的构式集合，本部分将对求解代码进行介绍。
 
-你可以通过[`02_coverage_solver_tutorial.py`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/01_cxgtokenizer_tutorial.py)脚本获得完整的教程，或查看下方简易的代码样例和输出：
+你可以通过[`02_coverage_solver_tutorial.py`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/02_coverage_solver_tutorial.py)脚本获得完整的教程，或查看下方简易的代码样例和输出：
 1. 抽取得到的构式例子
 ```python
 from Simuann import CxGCoverage
