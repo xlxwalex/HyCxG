@@ -16,9 +16,9 @@
 ## HyCxG教程
 
 ### 目录
-+ [CxGTokenizer的使用](###CxGTokenizer的使用)
-+ [Cond-MC求解器的使用](###Cond-MC求解器的使用)
-+ [Hypergraph的生成](###Hypergraph的生成)
++ [CxGTokenizer的使用](#CxGTokenizer的使用)
++ [Cond-MC求解器的使用](#Cond-MC求解器的使用)
++ [Hypergraph的生成](#Hypergraph的生成)
 
 ---
 ### 1 CxGTokenizer的使用
