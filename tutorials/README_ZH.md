@@ -16,12 +16,12 @@
 ## HyCxG教程
 
 ### 目录
-+ [CxGTokenizer的使用](1-CxGTokenizer的使用)
-+ [Cond-MC求解器的使用](#2-Cond-MC求解器的使用)
-+ [Hypergraph的生成](#3-Hypergraph的生成)
++ [CxGTokenizer的使用](#CxGTokenizer的使用)
++ [Cond-MC求解器的使用](#Cond-MC求解器的使用)
++ [Hypergraph的生成](#Hypergraph的生成)
 
 ---
-### 1 CxGTokenizer的使用
+### CxGTokenizer的使用
 在HyCxG中为了编码构式信息，我们需要从句子中抽取出所有的构式。`CxGTokenizer`被包含在了代码中的[`Tokenizer`](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/Tokenizer)部分，其主要代码继承自[`c2xg`](https://github.com/jonathandunn/c2xg)包。主要功能是从句子中抽取所有在构式表中包含的构式，并与预训练模型词例化(tokenize)后的词例(token)进行对齐，仓库中的版本支持`BERT`以及`RoBERTa`预训练模型，要支持其余的预训练模型也可以很方便地进行修改。
 
 **注意**：在进行构式抽取前，请先确保执行[`Tokenizer`](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/Tokenizer)以及[`dataset`](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/dataset)的README中所有的下载步骤。
@@ -70,7 +70,7 @@ constructions = {
 在句子“The restaurants try too hard to make fancy food.”中，词例化后得到tokens为(注意：这个词例是按照空格切分的)['the', 'restaurants', 'try', 'too', 'hard', 'to', 'make', 'fancy', 'food', '.']，
 抽取得到了三个构式'ADV--hard--to--VERB', 'ADV--hard--to', 'hard--PART--VERB'，它们的索引分别为1501, 10765, 1943。其中'ADV--hard--to'构式的起始索引是3和6(左开右闭)，因此对应token[3:6)=['too', 'hard', 'to']，其他构式同。
 
-### 2 Cond-MC求解器的使用
+### Cond-MC求解器的使用
 在获得所有的构式后，我们对这些构式进行了筛选，选择了代表性的构式进行编码。我们将筛选过程形式化为了一个多目标的优化问题，可以在论文的Section 2.2中找到详细过程。由于这是一个NP问题，我们采用了模拟退火(Simulated Annealing, SA)来启发式地找到最优的构式集合，本部分将对求解代码进行介绍。
 
 你可以通过[`02_coverage_solver_tutorial.py`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/01_cxgtokenizer_tutorial.py)脚本获得完整的教程，或查看下方简易的代码样例和输出：
@@ -130,7 +130,7 @@ CXG : AUX--so--ADJ, (3, 6)
 
 **2A**: 如果句子中只有两个构式，且它们的分数完全相同，那么就会形成死锁卡住。为了避免卡住因此程序设置了最大的搜索上限
 
-### 3 Hypergraph的生成
+### Hypergraph的生成
 在获得了句子中被选定的构式集合后，我们可以将集合生成为超图。该部分的代码主要在[`utils/hypergraph.py`](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/utils/hypergraph.py)中。你可以通过[`03_hypergraph_tutorial.py`](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/03_hypergraph_tutorial.py)脚本获得完整的教程，或查看下方简易的代码样例和输出：
 1. 引入所需的包以及声明参数
 ```python
