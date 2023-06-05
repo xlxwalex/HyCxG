@@ -13,9 +13,8 @@
 
 ---
 
-[**English**](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/HyCxG/README_ZH.md)
+[**English**](https://github.com/xlxwalex/HyCxG/tree/main/guidelines/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/guidelines/README_ZH.md)
 
-## HyCxG
+## Guidelines
 
-
-### Quick Start
+Under construction..
