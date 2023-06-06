@@ -14,7 +14,7 @@
 [**English**](https://github.com/xlxwalex/HyCxG/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/README_ZH.md) 
 
 
-🔗 [数据集](https://github.com/xlxwalex/HyCxG/tree/main/data) • [教程](https://github.com/xlxwalex/HyCxG/tree/main/tutorials) • [指南](https://github.com/xlxwalex/HyCxG/tree/main/guidelines) • [快速开始](#-快速开始) • [相关工作](https://github.com/xlxwalex/HyCxG/tree/main/https://github.com/xlxwalex/HyCxG/blob/main/tutorials/PaperLists.md) • [FAQ❓](https://github.com/xlxwalex/HyCxG/tree/main/guidelines/faq.md)
+🔗 [数据集](https://github.com/xlxwalex/HyCxG/tree/main/data) • [教程](https://github.com/xlxwalex/HyCxG/tree/main/tutorials) • [指南](https://github.com/xlxwalex/HyCxG/tree/main/guidelines) • [快速开始](#-快速开始) • [相关工作](https://github.com/xlxwalex/HyCxG/blob/main/tutorials/PaperLists.md) • [FAQ❓](https://github.com/xlxwalex/HyCxG/tree/main/guidelines/faq.md)
 
 > **注意**
 > 
@@ -48,7 +48,7 @@
       Gong, Zhilin  and
       Cai, Ming and
       Wang, Tianxiang",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
     year = "2023",
     publisher = "Association for Computational Linguistics",
 }
