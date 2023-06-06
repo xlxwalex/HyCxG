@@ -1,26 +1,62 @@
 <p align="center" >
-    <a href="https://github.com/xlxwalex/HyCxG/tree/main/HyCxG">
+    <a href="https://github.com/xlxwalex/HyCxG">
     <br>
-    <img src="https://github.com/xlxwalex/HyCxG/blob/main/figures/sub-logo.png" width="275"/>
+    <img src="https://github.com/xlxwalex/HyCxG/blob/main/figures/main-logo.png" width="100%"/>
     <br>
     </a>
 </p>
+
+# HyCxG
+The official code for paper "**Enhancing Language Representation with Constructional Information for Natural Language Understanding**"
+
+<a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" /></a>
+
+[**English**](https://github.com/xlxwalex/HyCxG/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/README_ZH.md)
+
+🔗 [Data](https://github.com/xlxwalex/HyCxG/tree/main/data) • [Tutorial](https://github.com/xlxwalex/HyCxG/tree/main/tutorials) • [Guideline](https://github.com/xlxwalex/HyCxG/tree/main/guidelines) • [Quick Start](#-快速开始) • [Related Work](https://github.com/xlxwalex/HyCxG/tree/main/https://github.com/xlxwalex/HyCxG/blob/main/tutorials/PaperLists.md) • [FAQ❓](https://github.com/xlxwalex/HyCxG/tree/main/guidelines/faq.md)
+
+> **Note**
+> 
+> This repository is still under construction and will take some time to complete.
+> 
+
+## 🌀 目录
+* [📖 Introduction to HyCxG](#-introduction-to-hycxg)
+* [📃 About this Repository](#-about-this-repository)
+* [🐍 Quick Start](#-quick-start)
+* [🔗 Other Information](#-appreciation)
+
+## 📖 Introduction to HyCxG
+
+## 📃 About this Repository
+
+## 🐍 Quick Start
+
+## 🙏 Appreciation
+- [c2xg](https://github.com/jonathandunn/c2xg) for extracting the constructions from the sentence  
+- [simanneal](https://github.com/perrygeo/simanneal) for a convenient simulated annealing framework to solve problems
+
+## 👋 How to cite
+If you think our work is helpful, feel free to cite our paper "Enhancing Language Representation with Constructional Information for Natural Language Understanding":
+```
+@inproceedings{xu2023enhance,
+    title = "Enhancing Language Representation with Constructional Information for Natural Language Understanding",
+    author = "Xu, Lvxiaowei  and
+      Wu, Jianwang  and
+      Peng, Jiawei  and
+      Gong, Zhilin  and
+      Cai, Ming and
+      Wang, Tianxiang",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    year = "2023",
+    publisher = "Association for Computational Linguistics",
+}
+```
 <p align="center">
-    <a href="https://github.com/xlxwalex/HyCxG/blob/main/LICENSE">
-        <img alt="GitHub" src="https://img.shields.io/github/license/xlxwalex/HyCxG.svg?color=blue&style=flat-square">
+    <a href="https://arxiv.org/abs/2306.02819">
+        <img alt="Arxiv" src="https://img.shields.io/badge/ HyCxG- Paper-plastic?logo=arXiv&style=for-the-badge&logoColor=white&color=blue&link=https://arxiv.org/abs/2210.12364">
     </a>
 </p>
 
-## Tutorials of HyCxG
-[**English**](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/) | [**简体中文**](https://github.com/xlxwalex/HyCxG/tree/main/tutorials/README_ZH.md)
-
-## Content
-+ [The Usage of CxGTokenizer](#the-usage-of-cxgtokenizer)
-+ [The Usage of Cond-MC Solver](#the-usage-of-cond-mc-solver)
-+ [The Generation of Hypergraph](#the-generation-of-hypergraph)
----
-### 1 The Usage of CxGTokenizer
-
-### 2 The Usage of Cond-MC Solver
-
-### 3 The Generation of Hypergraph
+## 📧 Contact
+If you have any questions about the code, feel free to submit an Issue or contact [`xlxw@zju.edu.cn`](mailto:xlxw@zju.edu.cn)
