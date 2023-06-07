@@ -88,7 +88,7 @@ bash download_cxgdict.sh
       Gong, Zhilin  and
       Cai, Ming and
       Wang, Tianxiang",
-    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics",
+    booktitle = "Proceedings of the 61th Annual Meeting of the Association for Computational Linguistics",
     year = "2023",
     publisher = "Association for Computational Linguistics",
 }
