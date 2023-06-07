@@ -81,7 +81,7 @@ We provide some examples of code for running HyCxG in [`HyCxG/run_hycxg.sh`](htt
 - [c2xg](https://github.com/jonathandunn/c2xg) for extracting the constructions from the sentence  
 - [simanneal](https://github.com/perrygeo/simanneal) for a convenient simulated annealing framework to solve problems
 
-## 👋 How to cite
+## 👋 How to Cite
 If you think our work is helpful, feel free to cite our paper "Enhancing Language Representation with Constructional Information for Natural Language Understanding":
 ```
 @inproceedings{xu2023enhance,
@@ -92,7 +92,7 @@ If you think our work is helpful, feel free to cite our paper "Enhancing Languag
       Gong, Zhilin  and
       Cai, Ming and
       Wang, Tianxiang",
-    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics ",
+    booktitle = "Proceedings of the 61th Annual Meeting of the Association for Computational Linguistics ",
     year = "2023",
     publisher = "Association for Computational Linguistics",
 }
