@@ -101,7 +101,7 @@ class Loader(object):
 
     @staticmethod
     def replace_with_email(token, alternative="<email>"):
-        return [utils.CURRENCY_REGEX.sub(alternative, x) for x in token]
+        return [utils.EMAIL_REGEX.sub(alternative, x) for x in token]
 
     @staticmethod
     def replace_with_phone(token, alternative="<phone>"):
