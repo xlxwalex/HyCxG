@@ -80,17 +80,19 @@ bash download_cxgdict.sh
 ## 👋 引用
 如果您认为我们的工作对您有帮助，您可以引用我们的论文： Enhancing Language Representation with Constructional Information for Natural Language Understanding
 ```
-@inproceedings{xu2023enhance,
+@inproceedings{xu-etal-2023-enhancing,
     title = "Enhancing Language Representation with Constructional Information for Natural Language Understanding",
     author = "Xu, Lvxiaowei  and
       Wu, Jianwang  and
       Peng, Jiawei  and
       Gong, Zhilin  and
-      Cai, Ming and
+      Cai, Ming  and
       Wang, Tianxiang",
-    booktitle = "Proceedings of the 61th Annual Meeting of the Association for Computational Linguistics",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     year = "2023",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.258",
+    pages = "4685--4705",
 }
 ```
 
