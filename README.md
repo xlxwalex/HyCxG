@@ -84,17 +84,19 @@ We provide some examples of code for running HyCxG in [`HyCxG/run_hycxg.sh`](htt
 ## 👋 How to Cite
 If you think our work is helpful, feel free to cite our paper "Enhancing Language Representation with Constructional Information for Natural Language Understanding":
 ```
-@inproceedings{xu2023enhance,
+@inproceedings{xu2023enhancing,
     title = "Enhancing Language Representation with Constructional Information for Natural Language Understanding",
     author = "Xu, Lvxiaowei  and
       Wu, Jianwang  and
       Peng, Jiawei  and
       Gong, Zhilin  and
-      Cai, Ming and
+      Cai, Ming  and
       Wang, Tianxiang",
-    booktitle = "Proceedings of the 61th Annual Meeting of the Association for Computational Linguistics ",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     year = "2023",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.258",
+    pages = "4685--4705",
 }
 ```
 <p align="center">
