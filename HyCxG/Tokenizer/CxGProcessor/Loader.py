@@ -46,10 +46,10 @@ class Loader(object):
 
     def load_text(self, text):
         tokens = self.tokenize(text)
-        map_word2_token = self.map_cxgtoken2plmtoken(tokens)
+        map_word2_token, tokenizer_tokens = self.map_cxgtoken2plmtoken(tokens)
         tokens = self.replace(tokens)
         lines = self.tokens2lines(tokens)
-        return lines, map_word2_token
+        return lines, map_word2_token, tokenizer_tokens
 
     def load_from_file(self, file):
         text = []
@@ -57,7 +57,7 @@ class Loader(object):
             for line in f.readlines():
                 if line.strip():
                     text.append(line.strip())
-        lines, _ = self.load_text(text)
+        lines, _, tokenizer_tokens = self.load_text(text)
         return lines
 
     def tokenize(self, text):
@@ -82,14 +82,15 @@ class Loader(object):
 
     def map_cxgtoken2plmtoken(self, tokens):
         accum_idx = 0
-        mapper = []
+        mapper, true_tokens = [], []
         for token in tokens[0]:
             tok = []
             wp_tokens = self.auto_tokenizer.tokenize(token) if self.lmg == 'BERT' else self.auto_tokenizer.tokenize(' ' + token)
+            true_tokens.extend(wp_tokens)
             tok.extend(wp_tokens)
             mapper.append([accum_idx, accum_idx + len(tok) -1])
             accum_idx += len(tok)
-        return mapper
+        return mapper, [true_tokens]
 
     @staticmethod
     def replace_with_number(token, alternative="<number>"):
@@ -101,7 +102,7 @@ class Loader(object):
 
     @staticmethod
     def replace_with_email(token, alternative="<email>"):
-        return [utils.EMAIL_REGEX.sub(alternative, x) for x in token]
+        return [utils.CURRENCY_REGEX.sub(alternative, x) for x in token]
 
     @staticmethod
     def replace_with_phone(token, alternative="<phone>"):

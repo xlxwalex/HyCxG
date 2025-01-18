@@ -41,4 +41,3 @@ class CxGTokenizer(object):
             results['cons_pattern'] = cons_pattern
             return results
         # else branch is not avalible in Github Repo
-

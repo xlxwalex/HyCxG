@@ -13,14 +13,14 @@ class CxGCore(object):
         if isinstance(text, str):
             text = [text]
         tokens = self.Loader.tokenize(text)
-        lines, mapper = self.Loader.load_text(text)
+        lines, mapper, tokenizer_tokens = self.Loader.load_text(text)
         results = self.Parser.parse_lines(lines)
         # return results
         results_ = {}
         for i, res in enumerate(results):
             temp = {}
             temp["text"] = text[i]
-            temp["token"] = tokens[i]
+            temp["token"] = tokenizer_tokens[i]
             temp["cons_idx"] = [ele + 1 for ele in res[0]] # 0 -<PAD>
             temp["cons_start"] = [mapper[ele][0] for ele in res[1]]
             temp["cons_end"] = [mapper[ele-1][-1] + 1 for ele in res[2]]
